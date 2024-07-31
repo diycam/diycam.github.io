@@ -37,7 +37,7 @@
         const pc = new RTCPeerConnection({
             iceServers: [{username: 'easemyai',
                 credential: 'm3s0z1xwa5ewqjonvbujcaraf',
-                urls: ['turn:34.93.162.220:3478']}]
+                urls: ['stun.l.google.com:19302', 'stun:stun.l.google.com:19302']}]
         })
 
         const localTracks = []
