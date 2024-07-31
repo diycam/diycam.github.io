@@ -35,7 +35,9 @@
 <script>
     async function PeerConnection(media) {
         const pc = new RTCPeerConnection({
-            iceServers: [{urls: 'turn:34.93.162.220:3478'}]
+            iceServers: [{username: 'easemyai',
+                credentials: 'm3s0z1xwa5ewqjonvbujcaraf',
+                urls: ['turn:34.93.162.220:3478']}]
         })
 
         const localTracks = []
